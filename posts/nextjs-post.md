@@ -18,7 +18,7 @@ img: "https://i.postimg.cc/BQnX5jWc/Copy-of-AWS-Amplify-blog-compress.png"
 
 
 
-```bash
+```
 npx create-next-app@latest
 # or
 yarn create next-app
@@ -64,7 +64,8 @@ my-next-project/
 En tal caso de que en esta pregunta hayas escogido **Would you like to use `src/` directory with this project? ...** NO 
 entonces deberias poder ver un arbol de archivos algo como esto
 
-```my-next-project/
+```
+my-next-project/
 ├── node_modules/
 ├── public/
 │   ├── favicon.ico

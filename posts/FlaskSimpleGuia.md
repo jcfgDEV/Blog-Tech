@@ -25,7 +25,9 @@ Una de las características más destacadas de Flask es su modularidad. Flask se
 
 
 ### Paso 1
-Buscamos Python en google 
+
+Buscamos Python en google
+
 ![paso 1](https://i.postimg.cc/rFk84D6c/Aspose-Words-cb3f9b21-86b4-4c97-9c11-5513b8f775f7-004.png)
 
 
@@ -56,10 +58,10 @@ Abre la terminal o línea de comandos en tu computadora y crea una nueva carpeta
 
 Ingresa a la carpeta que acabas de crear en la terminal y ejecuta el siguiente comando para crear un nuevo proyecto de React utilizando la herramienta create-react-app:
 
-```bash
+```
   cd my-project
 ```
-```bash
+```
 npx create-react-app nombre-de-tu-proyecto
 ```
 
@@ -74,14 +76,16 @@ Ingresa a la carpeta que acabas de crear en la terminal y crea un entorno virtua
 
 Yo uso virtualenv asi que quedaria de esta forma
 
-```bash
-pip install virtualenv
-cd nombre-de-la-carpeta *Donde ubicaras tu proyecto Flask*
-virtualenv nombre-del-archivo-env 
 ```
+pip install virtualenv
+cd nombre-de-la-carpeta Donde ubicaras tu proyecto Flask
+virtualenv nombre-del-archivo-env
+
+```
+
 **NOTA:** el virtualenv si no lo tienes instalado en tu directorio donde se encuentra python entonces el paso anterior donde esta **pip install virtualenv** lo deberas instalar primero. por lo general este comando solo se usa una vez. Ya despues vasta con que pongas **virtualenv nombre-del-archivo-env**
 
-el resultado deberia quedar algo parecido asi 
+el resultado deberia quedar algo parecido asi
 
 ```
 nombre-de-tu-entorno-virtual/
@@ -112,13 +116,18 @@ nombre-de-tu-entorno-virtual/
 
 - activate: Este es el comando que ejecuta el script activate para activar el entorno virtual de Python. Una vez ejecutado
 
-en resumen quedaria asi: ``` .\venv\Scripts\activate  ```
+en resumen quedaria asi 
+
+```
+.\venv\Scripts\activate  
+```
 
 
 # Notas:
 Al finalizar con el proyecto si quieres desactivar el entorno puedes usar **deactivate**
 
 Tambien si quieres enumerar todas tus dependencias y esto lo haces con un archivo llamado requirements.txt 
+
 ```
 pip freeze > requirements.txt
 ```
@@ -137,7 +146,6 @@ siempre que vayas a instalar alguna libreria utilizas pip install nombre-de-libr
 
 ```
 from flask import Flask
-
 api = Flask(__name__)
 
 @api.route('/profile')
@@ -156,7 +164,8 @@ Para iniciar el servidor puedes empezar usando en la terminal ya dentro de tu ca
 
 Resultado de la terminal
 
-```* Serving Flask app 'index'
+```
+ * Serving Flask app 'index'
  * Debug mode: off
 WARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.
  * Running on http:// ip de tu servidor + el puerto

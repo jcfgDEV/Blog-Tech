@@ -60,7 +60,7 @@ Uno de los aspectos más destacados de Git es su capacidad para manejar conflict
 **Configurar Git:** Antes de comenzar a usar Git, es importante configurar su nombre de usuario y dirección de correo electrónico. Para hacer esto, abra la línea de comando y ejecute los siguientes comandos, reemplazando "John Doe" y "johndoe@example.com" con su propio nombre de usuario y dirección de correo electrónico
 
 
-```bash
+```
 git config --global user.name "John Doe"
 git config --global user.email johndoe@example.com
 ```
@@ -81,11 +81,15 @@ Cuando ejecuta el comando **git config con la opción --global**, Git almacena l
 El comando git remote add origin se utiliza para agregar el nuevo repositorio remoto a su repositorio de Git existente y establecerlo como el origen **(nombre comúnmente utilizado para el repositorio remoto principal).** El formato general del comando es el siguiente:
 
 
-```git
+```
 git remote add origin <URL del repositorio remoto>
 ```
 
-Donde ```<URL del repositorio remoto>``` es la URL del repositorio remoto que desea agregar. Por ejemplo, si desea agregar un repositorio remoto en GitHub, la URL sería algo como:
+Donde la URL del repositorio remoto que desea agregar. Por ejemplo, si desea agregar un repositorio remoto en GitHub, la URL sería algo como:
+
+```
+<URL del repositorio remoto>
+```
 
 ```
 https://github.com/<usuario>/<repositorio>.git

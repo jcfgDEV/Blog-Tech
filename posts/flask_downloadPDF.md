@@ -20,7 +20,7 @@ Es una práctica común en el desarrollo web, ya que a menudo se necesita permit
 
 LADO DEL SERVIDOR 
 
-```python
+```
 from flask import Flask,send_file
 import firebase_admin
 from firebase_admin import credentials
@@ -45,14 +45,12 @@ def download_file():
     download = BytesIO(file_bytes)
     # Enviar los bytes del archivo como una descarga
     return send_file(download, download_name="John", as_attachment=True, mimetype='application/pdf')
-
-
 ```
 
 
 En el lado del cliente puedes enviar una peticion para pedir el recurso a descargar como pdf o imagenes etc...
 
-```javascript
+```
 function handleDownload() {
         fetch('Ruta a donde debe enviar la peticion para pedir el recurso a descargar')
             .then(response => response.blob())
@@ -66,13 +64,11 @@ function handleDownload() {
             })
             .catch(error => console.error(error));
     }
-
-
 ```
 
-```javascript
+```
 <button onClick={handleDownload}>
- Download PDF 
+ Download PDF
 </button>
 ```
 

@@ -17,14 +17,18 @@ React Icons es una biblioteca de iconos de código abierto para la biblioteca de
 
 Puedes instalarlo usando
 
-```npm install react-icons --save```
+```
+npm install react-icons --save
+```
 
 
 ### Ejemplo de usos
 
 Importación: Después de instalar la biblioteca, importa los iconos que necesitas en tu componente React. Para hacerlo, simplemente agrega el siguiente código en la parte superior de tu archivo de componente:
 
-```import { NombreDelIcono } from 'react-icons/nombre-de-la-librería';```
+```
+import { NombreDelIcono } from 'react-icons/nombre-de-la-librería';
+```
 
 ```
 import { FaBeer } from "react-icons/fa";

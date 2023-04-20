@@ -23,9 +23,9 @@ Once you are signed up, you should be able to log in to the [AWS Console](https:
 
 The AWS CLI is a command-line application that lets you interact with your AWS account from the terminal. It's available on all platforms.
 
-If you are a proficient Python user, you can just install it with `pip`.
+If you are a proficient Python user, you can just install it with **pip**.
 
-```bash
+```
 pip install awscli
 ```
 
@@ -33,7 +33,7 @@ Otherwise, check out the [official instructions](https://docs.aws.amazon.com/cli
 
 Once installed, you should be able to run this command from the terminal to see its version.
 
-```bash
+```
 aws --version
 ```
 
@@ -60,7 +60,7 @@ Next you need to [configure the CLI](https://docs.aws.amazon.com/cli/latest/user
 
 Basically, just run this command and paste in your access keys.
 
-```bash
+```
 aws configure
 ```
 
@@ -82,13 +82,13 @@ Once configured, the AWS CLI [saves the credentials](https://docs.aws.amazon.com
 ~/.aws/config
 ```
 
-You can open them up and edit them if you like or just run `aws configure` again to change them.
+You can open them up and edit them if you like or just run **aws configure** again to change them.
 
 ### Test the CLI!
 
-Now you should be able to use your CLI to access AWS. For example, I should be able to see the S3 buckets I have in `us-east-1`:
+Now you should be able to use your CLI to access AWS. For example, I should be able to see the S3 buckets I have in **us-east-1**:
 
-```bash
+```
 aws s3 ls
 
 2020-12-09 22:36:32 blog.pixegami.com
@@ -101,7 +101,7 @@ Generally, everything that can be done in the console can also be done in the CL
 
 Finally, to use AWS directly from your application code, you need to download the [SDK](https://aws.amazon.com/tools/) for the language you work with.
 
-The SDKs can be configured in different ways as well, but by default it usually uses the same profiles and credentials stored by your `aws configure`.
+The SDKs can be configured in different ways as well, but by default it usually uses the same profiles and credentials stored by your **aws configure**.
 
 
 ### That's it! 
