@@ -6,7 +6,7 @@ import matter from 'gray-matter';
 import Markdown from "markdown-to-jsx";
 
 
-//
+// Mapea la matriz de nombres de archivo y para cada uno de ellos reemplaza la extensión ".md" con una cadena vacía para obtener el nombre del archivo como un slug 
 export async function getStaticPaths() {
   const files = fs.readdirSync(path.join('posts'))
   const paths = files.map((filename) => ({
