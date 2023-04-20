@@ -6,6 +6,22 @@ import matter from 'gray-matter';
 import Markdown from "markdown-to-jsx";
 
 
+//
+export async function getStaticPaths() {
+  const files = fs.readdirSync(path.join('posts'))
+  const paths = files.map((filename) => ({
+    params: {
+      slug: filename.replace('.md', ''),
+    },
+  }))
+
+  return {
+    paths,
+    fallback: false,
+  }
+}
+
+
 const Blog = (props) => {
   const Slug = props.params.slug
   const markdown = fs.readFileSync(path.join('posts', Slug + '.md'), 'utf-8')
