@@ -28,30 +28,30 @@ export default function Page() {
     return (
         <>
 
-            <div class="grid gap-4 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 p-2">
+            <div className="grid gap-4 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 p-2">
                 {blog.map((item, index) => (
                     <a href={`/blog/${item.slug.split(" ").join("-")}`} key={index}>
-                        <li class="list-none hover:cursor-pointer">
-                            <div class="flex h-full flex-col justify-between rounded-md bg-neutral-900">
+                        <li className="list-none hover:cursor-pointer">
+                            <div className="flex h-full flex-col justify-between rounded-md bg-neutral-900">
                                 <div>
-                                    <Image alt="Prueba" src={item.formated.img} width={350} height={200} class="w-full rounded-t-md" />
+                                    <Image alt="Prueba" src={item.formated.img} width={350} height={200} className="w-full rounded-t-md" />
                                 </div>
-                                <div class="px-2 py-2">
-                                    <header class="flex items-center justify-start">
-                                        <div class="w-full text-left">
-                                            <h2 class="flex flex-row items-center justify-between text-sm font-bold text-slate-200">{item.formated.title}</h2>
+                                <div className="px-2 py-2">
+                                    <header className="flex items-center justify-start">
+                                        <div className="w-full text-left">
+                                            <h2 className="flex flex-row items-center justify-between text-sm font-bold text-slate-200">{item.formated.title}</h2>
                                         </div>
                                     </header>
-                                    <p class="text-sm text-neutral-300">
+                                    <p className="text-sm text-neutral-300">
                                         {item.formated.subtitle}
                                     </p>
                                 </div>
-                                <footer class="flex items-center justify-between px-1 py-1">
-                                    <div class="flex items-center gap-x-1">
-                                        <Image src={Avatar} alt="Avatar developer" class="inline-block h-14 w-14 rounded-full p-1" />
-                                        <span class="inline-flex items-center rounded bg-indigo-900 px-2 py-0.5 text-xs font-medium text-white">Juan G.</span>
+                                <footer className="flex items-center justify-between px-1 py-1">
+                                    <div className="flex items-center gap-x-1">
+                                        <Image src={Avatar} alt="Avatar developer" className="inline-block h-14 w-14 rounded-full p-1" />
+                                        <span className="inline-flex items-center rounded bg-indigo-900 px-2 py-0.5 text-xs font-medium text-white">Juan G.</span>
                                     </div>
-                                    <span class="inline-flex items-center rounded bg-zinc-700 px-2 py-0.5 text-xs font-medium text-white">{item.formated.date}</span>
+                                    <span className="inline-flex items-center rounded bg-zinc-700 px-2 py-0.5 text-xs font-medium text-white">{item.formated.date}</span>
                                 </footer>
                             </div>
                         </li>
