@@ -3,7 +3,7 @@ import matter from 'gray-matter'
 import path from 'path'
 import Image from 'next/image'
 import Link from 'next/link'
-
+import Avatar from '../public/Avatar.png'
 
 
 export default function Page() {
@@ -22,38 +22,43 @@ export default function Page() {
             formated
         }
     })
-    
+
 
 
     return (
         <>
-            <section className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-4 mb-12">
-                <section className="mt-6 grid grid-cols-1 md:grid-cols-1 lg:grid-cols-3 gap-x-6 gap-y-8">
-                    {blog.map((item, index) => (
-                        <article
-                            key={index}
-                            className="relative w-full h-80 object-cover group rounded-md overflow-hidden shadow-lg hover:shadow-2xl transition duration-300 ease-in-out">
-                            <div className="absolute inset-0">
-                                <Image
-                                    src={item.formated.img}
-                                    alt='Imagen de las cartas de post'
-                                    fill
-                                    quality={75}
-                                />
+
+            <div class="grid gap-4 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 p-2">
+                {blog.map((item, index) => (
+                    <a href={`/blog/${item.slug.split(" ").join("-")}`} key={index}>
+                        <li class="list-none hover:cursor-pointer">
+                            <div class="flex h-full flex-col justify-between rounded-md bg-neutral-900">
+                                <div>
+                                    <Image alt="Prueba" src={item.formated.img} width={350} height={200} class="w-full rounded-t-md" />
+                                </div>
+                                <div class="px-2 py-2">
+                                    <header class="flex items-center justify-start">
+                                        <div class="w-full text-left">
+                                            <h2 class="flex flex-row items-center justify-between text-sm font-bold text-slate-200">{item.formated.title}</h2>
+                                        </div>
+                                    </header>
+                                    <p class="text-sm text-neutral-300">
+                                        {item.formated.subtitle}
+                                    </p>
+                                </div>
+                                <footer class="flex items-center justify-between px-1 py-1">
+                                    <div class="flex items-center gap-x-1">
+                                        <Image src={Avatar} alt="Avatar developer" class="inline-block h-14 w-14 rounded-full p-1" />
+                                        <span class="inline-flex items-center rounded bg-indigo-900 px-2 py-0.5 text-xs font-medium text-white">Juan G.</span>
+                                    </div>
+                                    <span class="inline-flex items-center rounded bg-zinc-700 px-2 py-0.5 text-xs font-medium text-white">{item.formated.date}</span>
+                                </footer>
                             </div>
-                            <div className="absolute inset-0 bg-black bg-opacity-70 group-hover:opacity-30 transition duration-300 ease-in-out"></div>
-                            <div className="relative w-full h-full flex flex-wrap justify-center items-center text-center">
-                                <a className="text-white text-xl font-bold" href={`/blog/${item.slug.split(" ").join("-")}`}>
-                                    <span className="absolute inset-0"></span>
-                                    {item.formated.title}
-                                </a>
-                                <p className="text-white font-bold absolute bottom-0 left-0 p-2">{item.formated.date}</p>
-                                <p className="text-white font-bold absolute bottom-10 left-0 p-2">{item.formated.subtitle}</p>
-                            </div>
-                        </article>
-                    ))}
-                </section>
-            </section>
+                        </li>
+                    </a>
+                ))}
+            </div>
+
         </>
     )
 }
