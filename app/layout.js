@@ -1,5 +1,7 @@
 import './globals.css'
 import Logo from './components/Logo.js'
+import { Analytics } from '@vercel/analytics/react'
+;
 
 
 export const metadata = {
@@ -58,6 +60,7 @@ export default function RootLayout({ children }) {
                 <body>
                     <Logo />
                     {children}
+                    <Analytics/>
                 </body>
             </html>
         </>
