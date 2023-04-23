@@ -3,8 +3,7 @@ import matter from 'gray-matter'
 import path from 'path'
 import Image from 'next/image'
 import Avatar from '../public/Avatar.png'
-// import React,{useState,useEffect} from 'react'
-
+import Link from 'next/link'
 
 async function getData() {
     const url = 'https://newsapi.org/v2/top-headlines';
@@ -91,7 +90,7 @@ export default async function Page() {
                         <h1 className=' font-bold text-lg mb-4'>Noticias de Tecnologia </h1>
                         {datos.articles.map((item,index) => (
                             <li className="list-none hover:cursor-pointer" key={index}>
-                                <a href={item.url}>
+                                <Link href={item.url} target='_blank'>
                                     <div className="flex h-full flex-col justify-between rounded-md mb-5">
                                         <div>
                                             <Image alt="Prueba" priority src={item.urlToImage} width={350} height={200} className="w-full" />
@@ -114,7 +113,7 @@ export default async function Page() {
                                             <span className="inline-flex items-center rounded bg-zinc-700 px-2 py-0.5 text-xs font-medium text-white">{Format(item.publishedAt)}</span>
                                         </footer>
                                     </div>
-                                </a>
+                                </Link>
                             </li>
                         ))}
                     </div>
