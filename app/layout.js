@@ -1,4 +1,3 @@
-
 import './globals.css'
 import Logo from './components/Logo.js'
 
@@ -61,7 +60,6 @@ export default function RootLayout({ children }) {
                     
                     <Logo />
                     {children}
-                    <CookieBanner/>
                 </body>
             </html>
         </>
