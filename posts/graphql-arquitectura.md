@@ -7,7 +7,6 @@ img: "https://i.postimg.cc/4dsHW7mT/graphq.png"
 
 
 
-
 ![Graphql](https://i.postimg.cc/dtJkGdJZ/graphql-rest-diagram.jpg)
 
 

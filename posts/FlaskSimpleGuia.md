@@ -7,7 +7,6 @@ img: "https://i.postimg.cc/tC2gvpdd/flask-banner.png"
 
 
 
-
 ![Flask](https://i.postimg.cc/SRVtj1Fn/1200px-Flask-logo-svg.png)
 
 

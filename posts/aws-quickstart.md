@@ -5,6 +5,7 @@ date: "21-01-2023"
 img: "https://i.postimg.cc/cH8kKxhQ/media-1649ebc3fbbce0df508081913819d491fc3f7c7a9.png"
 ---
 
+
 "Cloud computing" plays a vital role in the creation of software products and services. It's also one of the most highly sought-after skills in the tech industry.
 
 In fact, most of the projects on this site will require cloud interaction of some sort—particularly with AWS's serverless products.

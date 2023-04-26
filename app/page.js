@@ -44,7 +44,6 @@ export default async function Page() {
     const News = getData();
     const [datos] = await Promise.all([News]);
     
-
     function Format() {
         const date = new Date('2023-04-23T12:37:16.3519796Z');
         const options = { day: 'numeric', month: 'long', year: 'numeric' };
