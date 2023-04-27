@@ -27,7 +27,7 @@ export default async function Page() {
     return (
         <>
             <div className="flex justify-center p-2 gap-2">
-                <div className="grid md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 xl:gap-3 gap-y-4 md:gap-y-0 gap-3">
+                <div className="grid md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-2">
                     {blog.map((item, index) => (
                         <li className="list-none hover:cursor-pointer" key={index}>
                             <a href={`/blog/${item.slug.split(" ").join("-")}`}>
