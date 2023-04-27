@@ -1,6 +1,6 @@
 ---
 title: "Graphql ¿Que es?"
-subtitle: "Consulta de datos eficiente y rapida"
+subtitle: "Consulta que permite acceder a información de manera eficiente y veloz. Optimiza la búsqueda y recuperación de datos de manera rápida"
 date: "2023-03-04"
 img: "https://i.postimg.cc/4dsHW7mT/graphq.png"
 ---

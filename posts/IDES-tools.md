@@ -1,6 +1,6 @@
 ---
 title: "IDEs para programar software"
-subtitle: "Herramientas para el desarrollo de software"
+subtitle: "Las herramientas de desarrollo de software incluyen editores de código, depuradores, control de versiones y frameworks"
 date: "2023-02-25"
 img: "https://i.postimg.cc/DwBZSFpp/o-que-e-uma-ide.jpg"
 ---

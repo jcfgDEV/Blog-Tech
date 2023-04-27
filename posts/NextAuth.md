@@ -1,6 +1,6 @@
 ---
 title: "Autenticacion con NextAuth usando Nextjs"
-subtitle: "Open Source. Full Stack. Own Your Data"
+subtitle: "Controla tus datos con tecnología de código abierto y una pila completa de soluciones."
 date: "2023-04-6"
 img: "https://i.postimg.cc/g02sGyck/Auth.png"
 ---

@@ -1,6 +1,6 @@
 ---
 title: "¿Que es Git?"
-subtitle: "Git es un sistema de control de versiones distribuido"
+subtitle: "Git es un sistema de gestión de versiones para el control de cambios en proyectos de software."
 date: "2023-03-11"
 img: "https://i.postimg.cc/qBC75zdV/git-blog-header.png"
 ---

@@ -1,6 +1,6 @@
 ---
 title: "Generador de contenido Markdown"
-subtitle: "Crea contenido web en Markdown."
+subtitle: "Crea y comparte contenido web en formato Markdown. Es de código abierto, lo que permite a la comunidad contribuir en su desarrollo"
 date: "21-02-2023"
 img: "https://i.postimg.cc/LXJHW1Tj/markdown-guide-og.jpg"
 ---

@@ -1,6 +1,6 @@
 ---
 title: "Alternativas Increibles a React-icons"
-subtitle: "Es una biblioteca de iconos de código abierto."
+subtitle: "biblioteca de iconos de código abierto y contiene una amplia variedad de iconos para su uso en proyectos de diseño y desarrollo."
 date: "2023-03-24"
 img: "https://i.postimg.cc/MpLBhqBZ/React.jpg"
 ---

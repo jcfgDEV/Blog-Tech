@@ -2,7 +2,7 @@
 title: "Desplegar NextJS o React app hacia Vercel"
 subtitle: "Vercel es una plataforma en la nube que se utiliza para alojar aplicaciones web y sitios web estáticos."
 date: "2023-03-24"
-img: "https://i.postimg.cc/T3rX942k/1-p-Jd-Lv-OAPg-VTf-ESZl-Si-CTw-Q.png"
+img: "https://i.postimg.cc/wx5whRxc/twitter-card.png"
 ---
 
 

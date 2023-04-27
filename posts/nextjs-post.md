@@ -1,6 +1,6 @@
 ---
 title: "Nextjs Primeros Pasos"
-subtitle: "Crea tu primer Proyecto usando el framework Nextjs"
+subtitle: "Next.js es un framework de React que permite aplicaciones web"
 date: "2023-02-22"
 img: "https://i.postimg.cc/BQnX5jWc/Copy-of-AWS-Amplify-blog-compress.png"
 ---
