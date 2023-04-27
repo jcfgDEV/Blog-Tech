@@ -3,3 +3,12 @@
 @tailwind utilities;
 
 
+.S{
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.9);
+    filter: brightness(0.9);
+  }
+  
+  
+  img{
+    filter: brightness(0.5);
+  }

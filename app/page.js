@@ -26,37 +26,20 @@ export default async function Page() {
 
     return (
         <>
-            <div className="flex justify-center p-2 gap-2">
-                <div className="grid md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-2">
+            <div className="p-1 flex justify-center">
+                <section className=" bg-white grid md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-2 p-2 ">
                     {blog.map((item, index) => (
-                        <li className="list-none hover:cursor-pointer" key={index}>
-                            <a href={`/blog/${item.slug.split(" ").join("-")}`}>
-                                <div className="flex flex-col justify-between rounded-md bg-neutral-900">
-                                    <div>
-                                        <Image alt="Prueba" priority src={item.formated.img} width={350} height={206} className="w-full rounded-t-md" />
-                                    </div>
-                                    <div className="px-2 py-2">
-                                        <header className="flex items-center justify-start">
-                                            <div className="w-full text-left">
-                                                <h2 className="flex flex-row items-center justify-between text-sm font-bold text-slate-200">{item.formated.title}</h2>
-                                            </div>
-                                        </header>
-                                        <p className="text-sm text-neutral-300">
-                                            {item.formated.subtitle}
-                                        </p>
-                                    </div>
-                                    <footer className="flex items-center justify-between pr-5">
-                                        <div className="flex items-center">
-                                            <Image src={Avatar} alt="Avatar developer" priority className="inline-block h-14 w-14 rounded-full p-1" />
-                                            <span className="inline-flex items-center rounded bg-indigo-900 px-2 py-0.5 text-xs font-medium text-white">Juan G.</span>
-                                        </div>
-                                        <span className="inline-flex items-center rounded bg-zinc-700 px-2 py-0.5 text-xs font-medium text-white">{item.formated.date}</span>
-                                    </footer>
-                                </div>
-                            </a>
-                        </li>
+                        <div className="relative" key={index}>
+                           <div>
+                           <a href={`/blog/${item.slug.split(" ").join("-")}`}><img src={item.formated.img} className="w-[1024px] h-[240px] object-cover rounded-md cursor-pointer" alt="Cover Anime" /></a>
+                           </div>
+                            <div className=" absolute bottom-1 left-3 ">
+                                <h2 className=" text-[#ffff] text-lg S ">{item.formated.title}</h2>
+                                <span className=" text-sm text-white font-black S">{item.formated.date}</span>
+                            </div>
+                        </div>
                     ))}
-                </div>
+                </section>
             </div>
         </>
     )
