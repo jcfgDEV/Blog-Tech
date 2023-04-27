@@ -31,7 +31,7 @@ export default async function Page() {
                     {blog.map((item, index) => (
                         <div className="relative" key={index}>
                            <div>
-                           <a href={`/blog/${item.slug.split(" ").join("-")}`}><img src={item.formated.img} className="w-[1024px] h-[240px] object-cover rounded-md cursor-pointer" alt="Cover Anime" /></a>
+                           <a href={`/blog/${item.slug.split(" ").join("-")}`}><Image priority src={item.formated.img} width={1024} height={240} className="w-[1024px] h-[240px] object-cover rounded-md cursor-pointer" alt="Cover Anime" /></a>
                            </div>
                             <div className=" absolute bottom-1 left-3 ">
                                 <h2 className=" text-[#ffff] text-lg S ">{item.formated.title}</h2>
