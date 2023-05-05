@@ -44,6 +44,7 @@ export const metadata = {
         title: 'Logo Website Blog Tech',
         description:'Blog para tips y pequeños modulos de codigo y algunas cosas interesante',
         creator: '@jcfgDEV',
+        url: "https://www.codegeekery.com/",
         images: ['https://i.postimg.cc/HnGKQ1rk/grid-0-1.png'],
     },
 
