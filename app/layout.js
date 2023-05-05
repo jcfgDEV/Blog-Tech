@@ -2,11 +2,11 @@ import './globals.css'
 import Logo from './components/Logo.js'
 
 
-
 export const metadata = {
     title: "Blog John's Tech",
     description: 'Blog para tips y pequeños modulos de codigo y algunas cosas interesante',
     type: 'website',
+    url: "https://www.codegeekery.com/",
     robots: {
         index: true,
     },
@@ -61,6 +61,7 @@ export default function RootLayout({ children }) {
                     {children}
                 </body>
             </html>
+            
         </>
     );
 }

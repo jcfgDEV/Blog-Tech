@@ -2,8 +2,7 @@ import fs from 'fs'
 import matter from 'gray-matter'
 import path from 'path'
 import Image from 'next/image'
-import Avatar from '../public/Avatar.png'
-import Link from 'next/link'
+
 
 
 
