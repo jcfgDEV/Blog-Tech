@@ -21,6 +21,16 @@ export async function getStaticPaths() {
   }
 }
 
+// Generar Dinamicamente el title del navegador
+export async function generateMetadata({ params }) {
+  const Slug = params.slug
+  const markdown = fs.readFileSync(path.join('posts', Slug + '.md'), 'utf-8')
+  const { data: formated, content } = matter(markdown)
+  return {
+    title: formated.title,
+  };
+}
+
 
 const Blog = (props) => {
   const Slug = props.params.slug

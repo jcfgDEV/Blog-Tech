@@ -3,10 +3,11 @@ import Logo from './components/Logo.js'
 
 
 export const metadata = {
+    metadataBase: new URL("https://www.codegeekery.com"),
     title: "Blog John's Tech",
     description: 'Blog para tips y pequeños modulos de codigo y algunas cosas interesante',
     type: 'website',
-    url: "https://www.codegeekery.com/",
+    url: "https://www.codegeekery.com",
     robots: {
         index: true,
     },
@@ -23,7 +24,7 @@ export const metadata = {
     openGraph: {
         title: "Blog John's Tech",
         description: 'Blog para tips y pequeños modulos de codigo y algunas cosas interesante',
-        url: 'https://www.codegeekery.com/',
+        url: 'https://www.codegeekery.com',
         siteName: 'Blog John',
         image: 'https://i.postimg.cc/HnGKQ1rk/grid-0-1.png',
         images: [
@@ -44,7 +45,10 @@ export const metadata = {
         title: 'Logo Website Blog Tech',
         description:'Blog para tips y pequeños modulos de codigo y algunas cosas interesante',
         creator: '@jcfgDEV',
-        images: ['https://i.postimg.cc/HnGKQ1rk/grid-0-1.png'],
+        images: {
+            url: 'https://i.postimg.cc/HnGKQ1rk/grid-0-1.png',
+            alt: 'Blog Logo',
+        },
     },
 
 }
